@@ -1,1 +1,0 @@
-C:\Users\千葉彌平\Documents\github\happinessFinder\HoloLensTCPClient\App\HoloLensTCPClient-master\HoloLensTCPClient-master.csproj;arm

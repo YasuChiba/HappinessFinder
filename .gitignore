@@ -4,6 +4,7 @@ HoloLensTCPClient/[Oo]bj/
 HoloLensTCPClient/[Bb]uild/
 HoloLensTCPClient/[Bb]uilds/
 HoloLensTCPClient/Assets/AssetStoreTools*
+HoloLensTCPClient/App/
 
 # Visual Studio cache directory
 .vs/

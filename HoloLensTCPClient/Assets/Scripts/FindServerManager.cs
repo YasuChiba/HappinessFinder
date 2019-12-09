@@ -90,6 +90,8 @@ class FindServerManager
         p_UDPReceivedData = receiveData;
         string text = System.Text.Encoding.UTF8.GetString(p_UDPReceivedData);
 
+        text = "http://" + text + ":42123";
+
         Debug.Log("UDP reveived   " + text);
 
         if(!receivedAddresses.Contains(text))

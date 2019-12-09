@@ -118,23 +118,25 @@ public class PhotoManager : MonoBehaviour
         if(isServer1)
         {
             request = UnityWebRequest.Post(DataClass.Instance().GetServerURL1() + "/picture2", form);
+            Debug.Log("start requesting to " + DataClass.Instance().GetServerURL1() + "/picture2");
 
-            if(DataClass.Instance().GetServerURL2() != "")
+            if (DataClass.Instance().GetServerURL2() != "")
             {
-                isServer1 = !isServer1;
+                isServer1 = false;
             }
         } else
         {
             request = UnityWebRequest.Post(DataClass.Instance().GetServerURL2() + "/picture2", form);
-            isServer1 = !isServer1;
+
+            Debug.Log("start requesting to " + DataClass.Instance().GetServerURL2() + "/picture2");
+
             if (DataClass.Instance().GetServerURL1() != "")
             {
-                isServer1 = !isServer1;
+                isServer1 = true;
             }
 
         }
 
-        Debug.Log("start requesting");
         yield return request.SendWebRequest();
         Debug.Log(request.isNetworkError);
         if (request.isNetworkError)
