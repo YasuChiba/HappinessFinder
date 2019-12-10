@@ -46,12 +46,12 @@ public class UIManager : MonoBehaviour {
     {
         URL1InputFIeld.InputFieldSelected += () =>
          {
-             InputFieldSelected(UIFieldType.URL1);
+            // InputFieldSelected(UIFieldType.URL1);
          };
 
         URL2InputFIeld.InputFieldSelected += () =>
         {
-            InputFieldSelected(UIFieldType.URL2);
+            //InputFieldSelected(UIFieldType.URL2);
         };
 
         PhotoIntervalField.InputFieldSelected += () =>
@@ -59,7 +59,6 @@ public class UIManager : MonoBehaviour {
             InputFieldSelected(UIFieldType.PhotoInterval);
         };
 
-        ;
 
      
 

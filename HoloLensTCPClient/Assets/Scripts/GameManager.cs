@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour, IInputClickHandler
     private UIManager uiManager;
     private PhotoManager client;
 
+    public GameObject cursor;
+
 
 
     //max time between first tap and second tap(for double tap)
@@ -35,6 +37,8 @@ public class GameManager : MonoBehaviour, IInputClickHandler
         InputManager.Instance.AddGlobalListener(gameObject);
 
         uiManager.CloseUI += CloseUI;
+        cursor.SetActive(false);
+
 
     }
 
@@ -45,6 +49,7 @@ public class GameManager : MonoBehaviour, IInputClickHandler
 
     void ShowUI()
     {
+        cursor.SetActive(true);
         uiManager.ShowUI(Camera.main.transform);
         IsShowingUI = true;
         client.StopPhotoCapture();
@@ -54,6 +59,8 @@ public class GameManager : MonoBehaviour, IInputClickHandler
 
     void CloseUI()
     {
+        cursor.SetActive(false);
+
         IsShowingUI = false;
         spatialMapping.SetActive(true);
     }

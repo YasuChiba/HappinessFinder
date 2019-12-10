@@ -230,6 +230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 538776506}
   spatialMapping: {fileID: 1502907675}
+  cursor: {fileID: 531906297}
 --- !u!4 &44406795
 Transform:
   m_ObjectHideFlags: 0
@@ -727,7 +728,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012072213228, guid: a611e772ef8ddf64d8106a9cbb70f31c, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a611e772ef8ddf64d8106a9cbb70f31c, type: 2}
@@ -1020,6 +1021,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 527954259}
+--- !u!1 &531906297 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012072213228, guid: a611e772ef8ddf64d8106a9cbb70f31c,
+    type: 2}
+  m_PrefabInternal: {fileID: 292432882}
 --- !u!114 &531906298 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114611684728110934, guid: a611e772ef8ddf64d8106a9cbb70f31c,
